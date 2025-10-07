@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-apply from: "$rootDir/gradle/kotlin.gradle"
-apply from: "$rootDir/gradle/kotlin-test.gradle"
+apply from: "$rootDir/../kotlin.gradle"
 
 dependencies {
   implementation project(":cats:cats-core")
@@ -51,4 +50,5 @@ dependencies {
   testImplementation "io.mockk:mockk"
   testImplementation "com.fasterxml.jackson.module:jackson-module-kotlin"
   testImplementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+  testImplementation "com.nhaarman:mockito-kotlin"
 }
